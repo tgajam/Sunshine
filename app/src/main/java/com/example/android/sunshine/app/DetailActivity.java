@@ -32,6 +32,7 @@ public class DetailActivity extends ActionBarActivity {
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -41,6 +42,8 @@ public class DetailActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            this.startActivity(intent);
             return true;
         }
 
@@ -70,4 +73,5 @@ public class DetailActivity extends ActionBarActivity {
         }
             return rootView;
     }
+
 }}
